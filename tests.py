@@ -82,4 +82,4 @@ class TestCls:
 
 if __name__ == "__main__":
     pytest.main(["tests.py"])
-    print('ALL TEST COMPLETE')
+    print('TEST COMPLETE')

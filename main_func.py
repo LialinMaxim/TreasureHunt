@@ -8,13 +8,13 @@ def transform(data):
 
 def go_hunt(map_str, start='11', ):
     result = []
-    map = transform(map_str)
+    _map = transform(map_str)
 
     def _next_item(item):
         if item not in result:
             result.append(item)
             k, v = int(item[0]), int(item[1])
-            new_item = map[k - 1][v - 1]
+            new_item = _map[k - 1][v - 1]
             if item == new_item:
                 return FOUND_MESSAGE
             return _next_item(new_item)
